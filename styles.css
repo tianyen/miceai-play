@@ -31,3 +31,44 @@
     -webkit-text-fill-color:CanvasText;
   }
 }
+
+/* Vivid PLAY art direction: jewel-dark surfaces and saturated iridescence. */
+:root{--bg:#090812;--text:#fffaff;--muted:#beb7cf;--mint:#5dffe0;--pink:#ff8fda;--line:#d5baff30;background:var(--bg)}
+.hero{background:#160b2a}
+.hero-art{filter:saturate(1.65) contrast(1.12) brightness(1.06)}
+.hero-shade{background:linear-gradient(90deg,#10071ed9 0%,#10071e91 29%,#10071e26 53%,transparent 72%),linear-gradient(0deg,#11091ac4,transparent 43%)}
+.hero-content .eyebrow{color:#a7fff0;letter-spacing:1.5px}
+.hero-description{color:#f0e7ff}
+.hero h1 small{color:#ff9cde}
+.hero h2{color:#fffaff;text-shadow:0 2px 22px #10071e66}
+.button{background:#5dffe0;box-shadow:0 5px 24px #19e5cb24}
+.button:hover{background:#a1ffeb;box-shadow:0 6px 30px #19e5cb40}
+.button.white{background:#fffaff;box-shadow:0 6px 28px #f396ff26}
+.header nav{background:#190e2dcc;border-color:#e8c7ff36}
+.highlight{background:#170d2dcc;border-color:#ba8fff73;box-shadow:inset 0 1px 0 #ffffff25,0 8px 28px #09041138}
+.highlight:nth-child(1){border-color:#62ffe080;background:#092c32bf}
+.highlight:nth-child(2){border-color:#fd89dd80;background:#371135bf}
+.highlight:nth-child(3){border-color:#c7a0ff8c;background:#231345c9}
+.highlight:hover{background:#493064de;border-color:#fff2}
+.highlight-index{color:#d7c6ec}
+.highlight:nth-child(1) h3{color:#7effe4}
+.highlight:nth-child(2) h3{color:#ffa1e3}
+.highlight:nth-child(3) h3{color:#d4b7ff}
+.highlight p{color:#fff4ff}
+.intro-band{background:#0c0b19}
+.product-figure img,.journey-visual img{filter:saturate(1.5) contrast(1.09) brightness(1.03)}
+.product-figure{background:#160d25;border:1px solid #cda0ff36;box-shadow:0 18px 70px #741bda15}
+.game-feature img,.scene-visual img,.campaign-example img{filter:saturate(1.12) contrast(1.04)}
+.ticket-section,.spaces{background:#191024}
+.playground{background:#0c1521}
+.demo-shell{border-color:#9374cc77;box-shadow:0 18px 60px #02000955}
+.contact{background:#182332}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){
+.wordmark > span,.hero h1 > span,.demo-bar .mint-text{background-image:linear-gradient(115deg,#47ffda 0%,#65dfff 22%,#b498ff 43%,#ff79d7 64%,#ffb878 83%,#fff0a1 100%)}
+}
+@media(max-width:700px){
+.hero-art{opacity:.92;filter:saturate(1.7) contrast(1.1) brightness(1.08)}
+.hero-shade{background:linear-gradient(90deg,#10071eeb 0%,#10071e9c 55%,#10071e45),linear-gradient(0deg,#160b2a 12%,transparent 78%)}
+.highlight{backdrop-filter:blur(16px)}
+}
+@media(forced-colors:active){.wordmark > span,.hero h1 > span,.demo-bar .mint-text{background-image:none}}
