@@ -33,3 +33,7 @@ python3 -m http.server 4190 --bind 127.0.0.1
 ## 聯絡表單
 
 聯絡信箱在 `index.html` 與 `app.js`。目前不連接伺服器，提交只整理摘要；寄信仍由使用者自行完成。若要正式收件、核銷或預約，需另行建置服務與資料處理流程。
+
+## 雙語更新
+
+繁中為 `index.html`／`app.js`，英文為 `en.html`／`en-app.js`。更新中文文案後，同步修改 `scripts/en-translations.tsv`，執行 `python3 scripts/build_english.py`。產生程式會檢查英文產生檔是否仍有未翻譯中文字（語言切換的「繁中」除外）。請提交原始檔、翻譯表及產生檔。語言切換保留 URL 區段，不保存表單及試玩狀態。
