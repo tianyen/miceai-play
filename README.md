@@ -2,7 +2,9 @@
 
 面向品牌、企業、展覽及商場活動的 B2B 產品介紹網站，以 **互動遊戲、數位空投、票券導流** 串起參與、獎勵與下一步行動。
 
-**網站網址：** https://tianyen.github.io/miceai-play/
+**繁體中文：** https://tianyen.github.io/miceai-play/
+
+**English:** https://tianyen.github.io/miceai-play/en.html
 
 ## 網站內容
 
@@ -50,3 +52,17 @@ docs/             內容規劃、維護部署及驗收說明
 玩法屬創意方案；正式客製、票務串接、活動規模及現場支援依合作規格確認。產品與活動圖片為 AI 生成概念示意，不代表真實客戶案例。
 
 © 2026 天衍互動股份有限公司。公開存放不等於授予品牌、圖片或程式碼再利用授權；本儲存庫目前未指定開源授權。
+
+## 中英文版本
+
+右上角「繁中／EN」切換語言，保留目前區段。中文入口 `index.html`，英文入口 `en.html`；兩版包含完整文案、圖片說明、遊戲、票券示範與需求摘要。切換會載入另一語言頁面，當次表單與試玩狀態不跨頁保存。
+
+維護中文 `index.html`／`app.js` 與 `scripts/en-translations.tsv`，再執行：
+
+```sh
+python3 scripts/build_english.py
+node --check app.js
+node --check en-app.js
+```
+
+`en.html` 與 `en-app.js` 為產生檔，請一併提交至 main。共用 `styles.css`，英文專用排版以 `html[lang=en]` 套用。GitHub Pages 不執行這個產生程式，仍直接發布提交的靜態檔案。
