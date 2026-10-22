@@ -66,3 +66,7 @@ node --check en-app.js
 ```
 
 `en.html` 與 `en-app.js` 為產生檔，請一併提交至 main。共用 `styles.css`，英文專用排版以 `html[lang=en]` 套用。GitHub Pages 不執行這個產生程式，仍直接發布提交的靜態檔案。
+
+## 免費提案入口（2026-10-22）
+
+已加入中英文三步需求表單與試玩轉提案動線。目前採使用者確認寄出的 Email 申請；自動 PDF／寄信服務尚未啟用。部署狀態、API 契約與測試方式見 [PROPOSAL-V1.md](docs/PROPOSAL-V1.md)。
