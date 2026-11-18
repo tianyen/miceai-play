@@ -1,0 +1,60 @@
+/* Modern Standard Arabic, native RTL layout; brand marks and contact addresses stay LTR. */
+html[lang=ar]{font-family:Tahoma,"Geeza Pro",Arial,sans-serif;letter-spacing:0}
+html[lang=ar] .eyebrow,html[lang=ar] .product-category,html[lang=ar] .game-tile-copy .eyebrow{letter-spacing:0;line-height:1.8}
+html[lang=ar] .header{direction:ltr}
+html[lang=ar] .header nav{direction:rtl}
+html[lang=ar] .language-switch{direction:ltr}
+html[lang=ar] .wordmark,html[lang=ar] .demo-bar>span,html[lang=ar] .contact-mail{direction:ltr;unicode-bidi:isolate;display:inline-block;font-family:Arial,sans-serif}
+html[lang=ar] .hero-content{width:56%;margin-right:auto;direction:rtl;padding-left:5%;padding-right:2%}
+html[lang=ar] .hero .hero-heading{font-size:clamp(34px,3.6vw,54px);line-height:1.55;max-width:660px}
+html[lang=ar] .hero-description{line-height:2;max-width:540px}
+html[lang=ar] .hero-actions{gap:20px}
+html[lang=ar] .hero-actions .button{font-size:15px;gap:14px;line-height:1.7}
+html[lang=ar] .hero-aside{display:none}
+html[lang=ar] .section h2{font-size:38px;line-height:1.6}
+html[lang=ar] .section-heading>div{flex-wrap:wrap;gap:20px}
+html[lang=ar] .section-heading>div>p{max-width:620px}
+html[lang=ar] .section p,html[lang=ar] .highlight p{line-height:2}
+html[lang=ar] .highlight h3{font-size:23px;line-height:1.5}
+html[lang=ar] .game-tile,html[lang=ar] .answer,html[lang=ar] .vote-option,html[lang=ar] button.text-link{text-align:right}
+html[lang=ar] .game-tile-copy strong{font-size:22px;line-height:1.6}
+html[lang=ar] .game-tile-badge{left:auto;right:14px}
+html[lang=ar] .game-tile-open{right:auto;left:14px}
+html[lang=ar] .game-action span{margin-left:0;margin-right:10px}
+html[lang=ar] .scene-tabs,html[lang=ar] .destination-tabs{gap:24px;flex-wrap:wrap}
+html[lang=ar] .scene-tabs button{min-width:0}
+html[lang=ar] .product-points b{min-width:90px}
+html[lang=ar] .proposal-controls .button{margin-left:0;margin-right:auto}
+html[lang=ar] input[type=email],html[lang=ar] input[type=tel],html[lang=ar] input[type=number]{direction:ltr;text-align:right}
+html[lang=ar] .brief-result pre{direction:rtl;text-align:right;unicode-bidi:plaintext;font-family:inherit}
+html[lang=ar] .image-caption,html[lang=ar] figcaption{letter-spacing:0}
+html[lang=ar] .scene-visual-label{left:auto;right:30px}
+html[lang=ar] .scene-visual-label b{font-size:25px}
+html[lang=ar] .dialog-top>span{letter-spacing:0}
+@media(max-width:1100px){html[lang=ar] .hero-content{width:61%}html[lang=ar] .hero .hero-heading{font-size:36px}html[lang=ar] .header nav a{padding-inline:10px;font-size:12px}}
+@media(max-width:1000px){
+html[lang=ar] .menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:6px;width:36px;height:36px;padding:8px;background:#ffffff18;border:1px solid #ffffff30;border-radius:50%}
+html[lang=ar] .menu-toggle span{height:1px;background:white;width:18px;display:block}
+html[lang=ar] .header nav{display:none;position:absolute;top:75px;left:6%;right:6%;flex-direction:column;align-items:stretch;border-radius:8px;background:#15121cf2;padding:12px}
+html[lang=ar] .header nav.open{display:flex}
+html[lang=ar] .header nav a{padding:14px 18px;font-size:14px}
+}
+@media(max-width:700px){
+html[lang=ar] .hero-content{width:100%;padding:124px 6% 0;margin:0}
+html[lang=ar] .hero .hero-heading{font-size:34px;line-height:1.55;max-width:100%}
+html[lang=ar] .hero-description{max-width:100%;font-size:14px}
+html[lang=ar] .hero-shade{background:linear-gradient(270deg,#160f25df,#160f2580),linear-gradient(0deg,#1b1428 18%,transparent 75%)}
+html[lang=ar] .hero-actions .button{font-size:13px;max-width:100%;padding:14px 18px}
+html[lang=ar] .hero-highlights{margin-top:32px}
+html[lang=ar] .highlight h3{font-size:19px}html[lang=ar] .highlight p{font-size:11px}
+html[lang=ar] .section h2{font-size:30px}
+html[lang=ar] .game-tile-copy strong{font-size:18px}
+html[lang=ar] .game-tile-badge{right:8px}html[lang=ar] .game-tile-open{left:8px}
+html[lang=ar] .product-points li{display:block}html[lang=ar] .product-points b{display:block;margin-bottom:6px}
+html[lang=ar] .scene-tabs{gap:0 16px}html[lang=ar] .scene-tabs button{font-size:12px;flex:auto}
+html[lang=ar] .form-grid{grid-template-columns:1fr}
+html[lang=ar] .intro-band p{white-space:normal}
+html[lang=ar] .journey-copy h2{font-size:25px}
+}
+html[lang=ar] .header>.header-contact{display:none}
+@media(min-width:701px){html[lang=ar] .hero-content{width:50%;padding-right:3%}html[lang=ar] .hero .hero-heading{font-size:clamp(32px,3.2vw,48px)}html[lang=ar] .hero-shade{background:linear-gradient(90deg,#10071ef5 0%,#10071ed9 38%,#10071e66 60%,transparent 80%),linear-gradient(0deg,#160b2acc,transparent 50%)}}
